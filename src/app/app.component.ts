@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'UdemyPractice';
-  serverElements =[{type:'server',content:"testContent",name:'testName'}] ;
+  serverElements:any =[]  ;
 
   OnServerAdded(serverData:{serverName:string,serverContent:string}){
     this.serverElements.push({
