@@ -5,11 +5,15 @@ import { AppComponent } from './app.component';
 import { CockpitComponent } from './cockpit/cockpit.component';
 import { ServerElemmentComponent } from './server-elemment/server-elemment.component';
 import { NgModule,NO_ERRORS_SCHEMA,CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { CounterComponent } from './counter/counter.component';
+import { CounterParentComponent } from './counter-parent/counter-parent.component';
 @NgModule({
   declarations: [
     AppComponent,
     CockpitComponent,
-    ServerElemmentComponent
+    ServerElemmentComponent,
+    CounterComponent,
+    CounterParentComponent
   ],
   imports: [
     BrowserModule,

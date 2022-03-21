@@ -5,10 +5,16 @@
  ></app-cockpit>
 <hr>
 <div class="row">
-  <div class="col-xs-10">
+  <div class="col-md-8">
     <app-server-elemment  *ngFor="let ServerElement of serverElements"
     [element]="ServerElement"
     ></app-server-elemment>
   </div>
+  <div class="col-md-4">
+    <div class="card">
+    <app-counter-parent></app-counter-parent>
+  </div>
+  </div>
 </div>
+
 </div>
