@@ -8,7 +8,14 @@
   <div class="col-md-8">
     <app-server-elemment  *ngFor="let ServerElement of serverElements"
     [element]="ServerElement"
-    ></app-server-elemment>
+    >
+    <div class="card-body">
+      <p>
+        <strong *ngIf="ServerElement.type==='server'" style="color:red">{{ServerElement.content}}</strong>
+        <em *ngIf="ServerElement.type==='blueprint'" style="color:blue">{{ServerElement.content}}</em>
+      </p>
+    </div>
+  </app-server-elemment>
   </div>
   <div class="col-md-4">
     <div class="card">
