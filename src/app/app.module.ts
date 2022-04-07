@@ -7,17 +7,27 @@ import { ServerElemmentComponent } from './server-elemment/server-elemment.compo
 import { NgModule,NO_ERRORS_SCHEMA,CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CounterComponent } from './counter/counter.component';
 import { CounterParentComponent } from './counter-parent/counter-parent.component';
+import { AccountComponent } from './account/account.component';
+import { NewAccountComponent } from './new-account/new-account.component';
+import { AddServerComponent } from './add-server/add-server.component';
+import { HeaderComponent } from './header/header.component';
+import { AppRoutingModule } from './app-routing.module';
 @NgModule({
   declarations: [
     AppComponent,
     CockpitComponent,
     ServerElemmentComponent,
     CounterComponent,
-    CounterParentComponent
+    CounterParentComponent,
+    AccountComponent,
+    NewAccountComponent,
+    AddServerComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent],
